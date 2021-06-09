@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  /* display: flex; */
+  background-image: url("./images/pianoBG.jpeg");
+  /* background-color: red; */
+  background-size: cover;
+  /* overflow: scroll; */
+}
+.header {
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    112deg,
+    rgba(0, 0, 0, 0.44348161627932425) 0%,
+    rgba(180, 180, 190, 1) 100%
+  );
+}
+
+.waveBlock {
+  /* text-align: center; */
+  height: 200px;
+  /* background-color: #2c3a47; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waveImage {
+  height: 150px;
+
+  display: none;
+}
+
+.show {
+  /* position: absolute; */
+  display: block;
+  /* background-color: cornsilk; */
+  /* bottom: 460px; */
+}
+
+@media only screen and (max-width: 600px) {
+  .show {
+    bottom: 460px;
+  }
+}
+
+.piano {
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  /* overflow: scroll; */
+}
+
+.tiles {
+  align-items: center;
+  height: 600px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+.key {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.white {
+  width: 9%;
+  min-width: 60px;
+  height: 70%;
+  background-color: white;
+  border: 1px solid #ccc;
+  color: #000;
+}
+
+.black {
+  width: 8%;
+  height: 45%;
+  margin-left: -4%;
+  margin-right: -4%;
+  z-index: 2;
+  background-color: black;
+  color: #fff;
+}
+
+.white.active {
+  background-color: #ccc;
+}
+
+.black.active {
+  background-color: #333;
+}
+
+/* .white.yellow {
+  background-color: yellow;
+} */
+
+.yellow {
+  /* background: rgb(244, 230, 209);
+  background: linear-gradient(
+    112deg,
+    rgba(244, 230, 209, 0.44348161627932425) 0%,
+    rgba(130, 118, 94, 1) 100%
+  ); */
+  background-color: #cad3c8;
+  /* background-color: #f2f1ce; */
+}
+
+.orange {
+  /* background-color: #70705f; */
+  /* background: rgb(255, 234, 203);
+  background: linear-gradient(
+    112deg,
+    rgba(255, 234, 203, 0.44348161627932425) 0%,
+    rgba(224, 161, 24, 1) 100%
+  ); */
+  background-color: #2c3a47;
+}
+.colorChange {
+  /* background-color: #777f9e; */
+  background: rgb(254, 253, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 253, 255, 1) 0%,
+    rgba(202, 211, 200, 1) 50%,
+    rgba(44, 58, 71, 1) 100%
+  );
+
+  cursor: pointer;
+}
+
+#changeToNormal {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  cursor: pointer;
+}
+
+.changeButton {
+  width: fit-content;
+  border-radius: 30px;
+  padding: 20px;
+  color: white;
+  font-weight: bolder;
+  margin: 10px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cp-text {
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  padding: 30px;
+}
+
+.hel {
+  color: #2c3a47;
+  margin-left: 4px;
+  margin-right: 4px;
+}
